@@ -40,11 +40,11 @@ function App() {
       <main className={"main-section d-flex flex-row"}>
         <aside className={"App-menu deepBlue"}>
           <ul>
-            <li className={"network"}><a href="overview.html">Overview</a> </li>
-            <li className={"computers"}><a href="experiments.html">Experiments</a> </li>
-            <li className={"group"}><a href="segments.html">Segments</a></li>
-            <li className={"chart"}><a href="insights.html">Insights</a></li>
-            <li className={"cloud"}><a href="visitor.html">Visitor Cloud</a></li>
+            <li><i className="fas fa-network-wired"/><a href="overview.html">Overview</a> </li>
+            <li><i className="fas fa-desktop"/><a href="experiments.html">Experiments</a> </li>
+            <li><i className="fas fa-users"/><a href="segments.html">Segments</a></li>
+            <li><i className="far fa-chart-bar"/><a href="insights.html">Insights</a></li>
+            <li><i className="fas fa-cloud"/><a href="visitor.html">Visitor Cloud</a></li>
           </ul>
         </aside>
         <section className={"content-container"}>
