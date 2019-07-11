@@ -17,6 +17,9 @@
 .iconGray{
   background-color: #d5d8de;
 }
+.gray{
+  color:#d5d8de;
+}
 .bodyPanelGray{
   background-color: #eceef1;
 }
@@ -260,7 +263,43 @@ body{
   width: 66%;
 }
 
+#products-purchased{
+  margin-top: 17px;
+  width: 100%;
+}
+#products-purchased .more-button{
+  font-size: 8px;
+  display: inline-block;
+  min-width: 100px;
+}
+#products-purchased .more-button span{
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left:2px;
+}
 
+.category-dd-2{
+  width: 125px;
+}
+
+#products-purchased .category-dd-1 #dropdown-outline-secondary {
+  /*font-size: 9px;*/
+  width: 200px;
+}
+
+#sample-field::placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+#products-purchased .form-control{
+  width: 55%;
+}
+
+
+.App-content form {
+  width:100%;
+}
 .content-container{
   width: 100%;
 }
@@ -275,7 +314,7 @@ body{
 }
 
 #myBar {
-  width: 20%;
+  width: 10%;
   height: 20px;
   background-color: #47b28d;
   border-radius: 5px;

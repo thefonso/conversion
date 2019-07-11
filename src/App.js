@@ -3,9 +3,11 @@ import logo from './images/qubit-logo.svg';
 import bell from './images/icon-bell.svg';
 import pencil from './images/icon-pencil.svg';
 import Button from 'react-bootstrap/Button';
-import Nav from 'react-bootstrap/Nav';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Dropdown from 'react-bootstrap/Dropdown';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
+import Form from 'react-bootstrap/Form';
 import './App.css';
 
 function App() {
@@ -75,6 +77,7 @@ function App() {
                 <div className="card-body">
                   <h6 className="card-title">Define a new Segment</h6>
                   <p className="card-text">Add a Condition to define a segment. The more conditions yuo add the more specific your segment will be.</p>
+
                 </div>
               </div>
 
@@ -86,6 +89,44 @@ function App() {
                 </div>
               </div>
 
+            </div>
+            <div className="d-flex">
+              <div id={"products-purchased"} className="card">
+                <div className="card-body">
+                  <h6 className="card-title">Define a new Segment <span className={"gray"}>- What products have they interacted with?</span></h6>
+                  <div className="d-flex">
+                    <DropdownButton className={"category-dd-1"}
+                                    size="sm"
+                                    id="dropdown-outline-secondary"
+                                    split
+                                    variant="outline-dark"
+                                    title="Category">
+                      <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                    </DropdownButton>
+                    <DropdownButton className={"category-dd-2"}
+                                    size="sm"
+                                    id="dropdown-basic-button"
+                                    variant="outline-dark"
+                                    title="is one of">
+                      <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                    </DropdownButton>
+                    <Form>
+                      <Form.Group controlId="exampleForm.ControlInput1">
+                        <Form.Control id="sample-field" type="email" placeholder="shoes" />
+                      </Form.Group>
+                    </Form>
+                  </div>
+                  <div className="d-flex">
+                    <Button className="more-button" size="sm" variant={"outline-dark"}>
+                      <i className="fas fa-plus"/><span>More</span>
+                    </Button>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
         </section>
