@@ -1,5 +1,35 @@
+/*colors*/
+.white{
+  background-color: #ffffff;
+}
+.deepBlue{
+  background-color: #2e343d;
+}
+.green{
+  background-color: #47b28d;
+}
+.green-light{
+  background-color:  #6bc1a3;
+}
+.backgroundBlue{
+  background-color: #395b72;
+}
+.iconGray{
+  background-color: #d5d8de;
+}
+.bodyPanelGray{
+  background-color: #eceef1;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/*colors end*/
+
+
 .App {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 body{
@@ -211,40 +241,46 @@ body{
 }
 
 .App-content{
+  color: #5f6165;
   height: 100vh;
+  padding:40px;
 }
+.App-content .card-body p{
+  font-size: 12px;
+}
+.App-content .card{
+  border: #bdc3c7 1px solid;
+}
+.App-content #define-segment{
+  margin-right: 17px;
+  width: 33%;
+}
+
+.App-content #estimated-size{
+  width: 66%;
+}
+
 
 .content-container{
   width: 100%;
 }
 /*main section ends*/
 
-.white{
-  background-color: #ffffff;
+
+/*Progress Bar*/
+#myProgress {
+  width: 100%;
+  background-color: #ebedee;
+  border-radius: 5px;
 }
-.deepBlue{
-  background-color: #2e343d;
-}
-.green{
+
+#myBar {
+  width: 20%;
+  height: 20px;
   background-color: #47b28d;
+  border-radius: 5px;
 }
-.green-light{
-  background-color:  #6bc1a3;
-}
-.backgroundBlue{
-  background-color: #395b72;
-}
-.iconGray{
-  background-color: #d5d8de;
-}
-.bodyPanelGray{
-  background-color: #eceef1;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
+/*Progress Bar end*/
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -69,7 +69,24 @@ function App() {
             </div>
           </header>
           <section className={"App-content bodyPanelGray"}>
-            <div><span>body content go here</span></div>
+            <div className={"d-flex justify-content-between"}>
+
+              <div id={"define-segment"} className="card">
+                <div className="card-body">
+                  <h6 className="card-title">Define a new Segment</h6>
+                  <p className="card-text">Add a Condition to define a segment. The more conditions yuo add the more specific your segment will be.</p>
+                </div>
+              </div>
+
+              <div id={"estimated-size"} className="card">
+                <div className="card-body">
+                  <h6 className="card-title">Estimated segment size</h6>
+                  <p className="card-text">10-20% of your total traffic expected to join based on a sample of historical data</p>
+                  <div id="myProgress"><div id="myBar"></div></div>
+                </div>
+              </div>
+
+            </div>
           </section>
         </section>
       </main>
