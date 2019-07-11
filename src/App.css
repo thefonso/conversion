@@ -103,13 +103,13 @@ body{
 }
 .App-menu ul{
   text-align: left;
-  list-style: none;
+  list-style-type: none;
   margin: 0;
-  padding-left: 35px;
-  padding-top: 33px;
+  padding: 0;
+  /*padding-left: 35px;*/
+  /*padding-top: 33px;*/
   /*width: 60px;*/
 }
-
 .App-menu li a{
   font-size: 12px;
   display: block;
@@ -120,13 +120,15 @@ body{
   text-decoration: none;
 }
 
-
+.App-menu li{
+  padding-left: 30px; /** move the text to the right **/
+}
+.App-menu li:hover{
+  background-color: #3b424e;  /* Change the link color on hover */
+}
 .App-menu li a:hover {
   background-color: #3b424e;  /* Change the link color on hover */
   color: white;
-}
-.App-menu li{
-  padding-left: 30px; /** move the text to the right **/
 }
 .App-menu li.network:hover{
  background-color: #3b424e;
@@ -139,7 +141,7 @@ body{
   background: url('./images/icon-computers.svg') left center no-repeat;
 }
 .App-menu li.computers:hover{
- background-color: #3b424e;
+  background-color: #3b424e;
 }
 .App-menu li.group{
   background: url('./images/icon-group.svg') left center no-repeat;
