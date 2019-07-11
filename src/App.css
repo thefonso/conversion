@@ -2,21 +2,149 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+body{
+  background-color: #395b72;
+}
+
+/*nav starts*/
+.navbar{
+  height: 60px;
+}
+.Qubit-logo {
+  /*animation: App-logo-spin infinite 20s linear;*/
+  height: 26px;
+  width: 96px;
   pointer-events: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.initials{
+  font-family: 'Open Sans', sans-serif;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #d5d8de;
+  border-radius: 15px;
+}
+.initials > span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  color: #ffffff;
+}
+
+/*nav ends*/
+
+/*main section starts*/
+.container{
+  max-width: 1400px;
+}
+.main-section{
+  /*flex-direction: row;*/
+}
+.App-menu{
+  color: #ffffff;
+  width: 235px;
+}
+.App-header{
+  width: 100%;
+  height: 107px;
+}
+.header-title{
+  margin-left: 30px;
+  margin-right: 14px;
+  margin-top: 20px;
+}
+.header-title .form-control{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  background-color:  #6bc1a3;
+  width: 640px;
+  height: 40px;
+  color: #ffffff !important;
+  display: block;
+  padding-left: 10px;
+  padding-right: 1px;
+  padding-top: 5px;
+  /*background-clip: padding-box;*/
+  border: 1px solid #6bc1a3;
+  border-radius: .15rem;
+  transition: #6bc1a3;
+}
+
+.form-control:focus {
+    color: #495057;
+    border-color: #6bc1a3;
+    outline: 0;
+    box-shadow: 0 0 0 0; /*override react-bootstrap*/
+}
+
+.header-title .caption{
+  font-size: 14px;
+  text-align: left;
+  color: #ffffff !important;
+  margin-left: 11px;
+}
+.icon-pencil{
+  margin-top: 32px;
+  margin-right: 75px;
+}
+.header-title-buttons{
+  margin-top: 35px;
+}
+.header-title-buttons .btn{
+  padding-left:24px;
+  padding-right:24px;
+  min-width: 100px;
+  max-height: 35px;
+  font-size: 12px;
+}
+.btn-outline-secondary:hover {
+    color: #575a5e;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-outline-secondary{
+    color: #fff;
+    border-color: #fff;
+}
+
+.hover-on{
+    color: #575a5e;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.App-content{
+  height: 100vh;
+}
+
+.content-container{
+  width: 100%;
+}
+/*main section ends*/
+
+.white{
+  background-color: #ffffff;
+}
+.deepBlue{
+  background-color: #2e343d;
+}
+.green{
+  background-color: #47b28d;
+}
+.green-light{
+  background-color:  #6bc1a3;
+}
+.backgroundBlue{
+  background-color: #395b72;
+}
+.iconGray{
+  background-color: #d5d8de;
+}
+.bodyPanelGray{
+  background-color: #eceef1;
 }
 
 .App-link {
