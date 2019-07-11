@@ -54,7 +54,7 @@ function App() {
             <a className="icon" href="#">
               <img src={pencil} className="icon-pencil" alt="edit title" />
             </a>
-            <div className={"header-title-buttons d-flex justify-content-between"}>
+            <div className={"header-title-buttons"}>
               <Button variant={"outline-secondary"}>Exit</Button>
               <Button variant={"outline-secondary"}>Preview</Button>
               <Button variant={"outline-secondary"} className={"hover-on"}>Save changes</Button>
