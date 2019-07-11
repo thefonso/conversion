@@ -8,7 +8,7 @@ body{
 
 /*nav starts*/
 .navbar{
-  /*height: 60px;*/
+  height: 60px;
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -97,10 +97,11 @@ body{
   /*flex-direction: row;*/
 }
 
+/*aside menu begins*/
 .App-menu{
   color: #ffffff;
   width: 235px;
-  padding-top: 35px;
+  padding-top: 25px;
 }
 .App-menu ul{
   text-align: left;
@@ -114,14 +115,15 @@ body{
 
 .App-menu li{
   /*height:30px;*/
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 35px; /** move the text to the right **/
 }
 .App-menu li i{
   width: 30px;
 }
 .App-menu li:hover{
+  border-left: #ffffff 4px solid;
   background-color: #3b424e;  /* Change the link color on hover */
 }
 .App-menu li a{
@@ -137,6 +139,7 @@ body{
   background-color: #3b424e;  /* Change the link color on hover */
   color: white;
 }
+/*aside menu ends*/
 
 .App-header{
   width: 100%;
