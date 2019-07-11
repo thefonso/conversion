@@ -114,7 +114,6 @@ body{
 }
 
 .App-menu li{
-  /*height:30px;*/
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 35px; /** move the text to the right **/
@@ -125,6 +124,7 @@ body{
 .App-menu li:hover{
   border-left: #ffffff 4px solid;
   background-color: #3b424e;  /* Change the link color on hover */
+  padding-left: 31px;
 }
 .App-menu li a{
   font-size: 12px;
