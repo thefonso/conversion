@@ -11,32 +11,40 @@ import './App.css';
 function App() {
   return (
     <div className="App container">
-      <nav className="navbar navbar-light white">
-        <a className="navbar-brand" href="#">
-          <img src={logo} className="Qubit-logo" alt="logo" />
-        </a>
-        <img src={bell} alt="bell" className="bell"/>
-        <div className={"initials"}><span>MS</span></div> Mark Smith
-        <div className="union-fashion">
-          <InputGroup className={"union-fashion"}>
-             <FormControl
-                 placeholder="Union Fashion"
-                 aria-label="Username"
-                 aria-describedby="basic-addon1"
-             />
-          </InputGroup>
-          {/*<Button>Union Fashion</Button>*/}
+      <nav className="navbar white d-flex">
+        <div className={"mr-auto"}>
+          <a className="navbar-brand" href="#">
+            <img src={logo} className="Qubit-logo" alt="logo" />
+          </a>
+        </div>
+        <div className={"user-info d-flex justify-content-end"}>
+          <img src={bell} alt="bell" className="bell"/>
+          <div className={"initials"}>
+            <span>MS</span>
+          </div>
+          <div className={"user-name"}>
+            <span>Mark Smith</span>
+          </div>
+          <div className="union-fashion">
+            <InputGroup className={"union-fashion"}>
+               <FormControl
+                   placeholder="Union Fashion"
+                   aria-label="Username"
+                   aria-describedby="basic-addon1"
+               />
+            </InputGroup>
+          </div>
         </div>
       </nav>
 
       <main className={"main-section d-flex flex-row"}>
         <aside className={"App-menu deepBlue"}>
           <ul>
-            <li>Overview</li>
-            <li>Experiments</li>
-            <li>Segments</li>
-            <li>Insights</li>
-            <li>Visitor Cloud</li>
+            <li className={"network"}>Overview</li>
+            <li className={"computers"}>Experiments</li>
+            <li className={"group"}>Segments</li>
+            <li className={"chart"}>Insights</li>
+            <li className={"cloud"}>Visitor Cloud</li>
           </ul>
         </aside>
         <section className={"content-container"}>
