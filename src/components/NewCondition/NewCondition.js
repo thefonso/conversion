@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Button from "react-bootstrap/Button";
+import './newcondition.css'
 
 class NewCondition extends Component {
   constructor(props) {
@@ -16,9 +17,9 @@ class NewCondition extends Component {
 
 
   render() {
-    const {addEvent, goSubmit, goChange} = this.props;
+    const {addEvent, goSubmit, goChange, prodValue} = this.props;
     return (
-      <div className="d-flex">
+      <div className="d-flex flex-column">
         <div id={"new-condition"} className={"card"} >
           <div className="card-body">
             <div  className="d-flex">
@@ -31,9 +32,9 @@ class NewCondition extends Component {
                   <span className="sr-only">Toggle Dropdown</span>
                 </button>
                 <div className="dropdown-menu">
-                  <a className="dropdown-item" href="#">Alpha</a>
-                  <a className="dropdown-item" href="#">Beta</a>
-                  <a className="dropdown-item" href="#">Gamma</a>
+                  {/*<a className="dropdown-item" href="#">Alpha</a>*/}
+                  {/*<a className="dropdown-item" href="#">Beta</a>*/}
+                  {/*<a className="dropdown-item" href="#">Gamma</a>*/}
                 </div>
               </div>
             ) : (
@@ -51,6 +52,7 @@ class NewCondition extends Component {
             </div>
           </div>
         </div>
+        <div className="d-flex justify-content-end"><span className={"footerLink"} onClick={()=> console.log(prodValue)}>Show source code</span></div>
       </div>
     );
   }

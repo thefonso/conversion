@@ -85,7 +85,7 @@ class Parent extends Component {
 
         {/*TODO: when add button is pushed a new Product or Technology card is
           added to the deck and the Progressbar increases by 20%*/}
-        <NewCondition goChange={this.handleChange.bind(this)} goSubmit={this.handleSubmit.bind(this)} addEvent={this.addProduct.bind(this)} />
+        <NewCondition prodValue={this.state.products} goChange={this.handleChange.bind(this)} goSubmit={this.handleSubmit.bind(this)} addEvent={this.addProduct.bind(this)} />
       </section>
     );
   }
