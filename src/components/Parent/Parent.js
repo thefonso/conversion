@@ -18,9 +18,8 @@ class Parent extends Component {
         id: "",
 
       };
+    this.handleChange = this.handleChange.bind(this)
   }
-
-
 
   deleteProduct = (index, e) => {
     const copyProducts = Object.assign([], this.state.products); // make a copy of array
@@ -39,9 +38,22 @@ class Parent extends Component {
     this.setState({ products: copyProducts });
   }
 
-  setProduct = (element) => {
+  // setProduct = (event) => {
+  //   console.log(event);
+  //   this.setState({
+  //     [event.target.title]: event.target.value,
+  //     [event.target.tagLine]: event.target.value,
+  //   })
+  // }
+
+  handleSubmit = (event) =>{
+    event.preventDefault()
+  }
+
+  handleChange(event){
+    const {name, value} = event.target
     this.setState({
-      title : element.target.value
+      [name]: value
     })
   }
 
@@ -52,13 +64,15 @@ class Parent extends Component {
         <ProgressBar />
 
         {/*TODO: products Delete button removes that card from the deck Progress bar reduces*/}
-        <input type="text" onBlur={this.setProduct}/>
-        <button onClick={this.addProduct}>Add</button>
 
-        <form action={this.addProduct()}>
-          <input type="text" onChange={this.} onBlur={this.setProduct}/>
+        <form onSubmit={this.handleSubmit}>
+          <input name={"title"} value={this.state.title} type="text" onChange={this.handleChange}/>
+          <input name={"tagLine"} value={this.state.tagLine} type="text" onChange={this.handleChange}/>
+          <button onClick={this.addProduct}>Add</button>
         </form>
 
+        <p>title: {this.state.title}</p>
+        <p>tagLine: {this.state.tagLine}</p>
         {this.state.products.map((product, index) => {
           return (
             <Products
