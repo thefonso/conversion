@@ -38,13 +38,6 @@ class Parent extends Component {
     this.setState({ products: copyProducts });
   }
 
-  // setProduct = (event) => {
-  //   console.log(event);
-  //   this.setState({
-  //     [event.target.title]: event.target.value,
-  //     [event.target.tagLine]: event.target.value,
-  //   })
-  // }
 
   handleSubmit = (event) =>{
     event.preventDefault()
@@ -65,14 +58,14 @@ class Parent extends Component {
 
         {/*TODO: products Delete button removes that card from the deck Progress bar reduces*/}
 
-        <form onSubmit={this.handleSubmit}>
-          <input name={"title"} value={this.state.title} type="text" onChange={this.handleChange}/>
-          <input name={"tagLine"} value={this.state.tagLine} type="text" onChange={this.handleChange}/>
-          <button onClick={this.addProduct}>Add</button>
-        </form>
+        {/*<form onSubmit={this.handleSubmit}>*/}
+        {/*  <input name={"title"} value={this.state.title} type="text" onChange={this.handleChange}/>*/}
+        {/*  <input name={"tagLine"} value={this.state.tagLine} type="text" onChange={this.handleChange}/>*/}
+        {/*  <button onClick={this.addProduct}>Add</button>*/}
+        {/*</form>*/}
 
-        <p>title: {this.state.title}</p>
-        <p>tagLine: {this.state.tagLine}</p>
+        {/*<p>title: {this.state.title}</p>*/}
+        {/*<p>tagLine: {this.state.tagLine}</p>*/}
         {this.state.products.map((product, index) => {
           return (
             <Products
@@ -88,7 +81,7 @@ class Parent extends Component {
 
         {/*TODO: when add button is pushed a new Product or Technology card is
           added to the deck and the Progressbar increases by 20%*/}
-        <NewCondition addEvent={this.addProduct.bind(this)} />
+        <NewCondition goChange={this.handleChange.bind(this)} goSubmit={this.handleSubmit.bind(this)} addEvent={this.addProduct.bind(this)} />
       </section>
     );
   }
