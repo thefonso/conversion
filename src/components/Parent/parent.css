@@ -1,0 +1,155 @@
+.App-content{
+  color: #5f6165;
+  /*height: 100vh;*/
+  padding:40px;
+}
+.App-content .card-body p{
+  font-size: 12px;
+}
+.App-content .card{
+  border: #bdc3c7 1px solid;
+}
+
+
+
+.more-button{
+  font-size: 8px;
+  display: inline-block;
+  min-width: 100px;
+  margin-top: 20px;
+}
+.more-button span{
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left:2px;
+}
+
+.delete-button{
+  font-size: 12px;
+  display: inline-block;
+  min-width: 100px;
+}
+.delete-button span{
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+
+.category-dd-1{
+  font-size: 12px;
+  width: 175px;
+  text-align: start;
+  padding-left: 13px;
+  border-right-width: 0px;
+}
+
+.category-dd-2{
+  font-size: 12px;
+  width: 100px;
+  text-align: start;
+  padding-left: 13px;
+  border-right-width: 0px;
+}
+
+.category-dd-3{
+  font-size: 12px;
+  width: 400px;
+  text-align: start;
+  padding-left: 6px;
+  border-right-width: 1px;
+  border-radius: 3px;
+}
+
+.category-dd-3 span{
+  border-radius: 3px;
+  background-color: #d5d8de;
+  padding: 2px 5px 3px 5px;
+  color: #5d6063;
+}
+
+.category-dd-4{
+  font-size: 12px;
+  width: 200px;
+  text-align: start;
+  padding-left: 6px;
+  border-right-width: 1px;
+  border-radius: 3px;
+}
+
+.category-dd-4 span{
+  border-radius: 3px;
+  background-color: #d5d8de;
+  padding: 2px 5px 3px 5px;
+  color: #5d6063;
+}
+
+.mid-row{
+  margin-top: 20px;
+  /*margin-bottom: 20px;*/
+}
+
+
+.dropdown-toggle{
+  border-left-width: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+#products-purchased .form-control{
+  width: 55%;
+}
+
+#products-purchased{
+  margin-top: 17px;
+  width: 100%;
+}
+
+#products-purchased .card-body{
+  border-bottom: white 1px solid !important;
+  border-bottom-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+
+#time-of-purchase{
+  margin-top: 0px;
+  width: 100%;
+}
+
+#time-of-purchase .card-body{
+  border-top: white 1px solid !important;
+  border-top-right-radius: 1px !important;
+  border-top-left-radius: 1px !important;
+}
+
+#technology{
+  margin-top: 17px;
+  width: 100%;
+}
+
+#new-condition {
+  margin-top: 17px;
+  width: 100%;
+}
+
+#new-condition .card-title{
+  padding-top: 6px;
+  text-align: center;
+  margin-right: 105px;
+}
+
+.add-button{
+  font-size: 8px;
+  display: inline-block;
+  min-width: 100px;
+  background-color: #47b28d;
+  color: white;
+  border: none;
+}
+.add-button span{
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left: 2px;
+}

@@ -1,0 +1,23 @@
+.App-content #define-segment{
+  margin-right: 17px;
+  width: 33%;
+}
+
+.App-content #estimated-size{
+  width: 66%;
+}
+
+/*Progress Bar*/
+#myProgress {
+  width: 100%;
+  background-color: #ebedee;
+  border-radius: 5px;
+}
+
+#myBar {
+  width: 10%;
+  height: 20px;
+  background-color: #47b28d;
+  border-radius: 5px;
+}
+/*Progress Bar end*/
