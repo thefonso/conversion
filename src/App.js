@@ -74,15 +74,15 @@ function App() {
             </div>
           </header>
           <section className={"App-content bodyPanelGray"}>
+            {/*define segment */}
             <div className={"d-flex justify-content-between"}>
-
               <div id={"define-segment"} className="card">
                 <div className="card-body">
                   <h6 className="card-title">Define a new Segment</h6>
                   <p className="card-text">Add a Condition to define a segment. The more conditions yuo add the more specific your segment will be.</p>
                 </div>
               </div>
-
+              {/*progress bar component*/}
               <div id={"estimated-size"} className="card">
                 <div className="card-body">
                   <h6 className="card-title">Estimated segment size</h6>
@@ -90,14 +90,14 @@ function App() {
                   <div id="myProgress"><div id="myBar"></div></div>
                 </div>
               </div>
-
             </div>
+            {/*products purchased component*/}
             <div className="d-flex">
               <div id={"products-purchased"} className="card">
                 <div className="card-body">
 
                   <div className="d-flex">
-                    <h6 className="card-title mr-auto">Define a new Segment <span className={"gray"}>- What products have they interacted with?</span></h6>
+                    <h6 className="card-title mr-auto">Products purchased <span className={"gray"}>- What products have they interacted with?</span></h6>
                     <Button className="delete-button" size="sm" variant={"outline-dark"}>
                         <i className="fas fa-trash-alt"/><span>Delete</span>
                     </Button>
@@ -143,14 +143,142 @@ function App() {
                       <i className="fas fa-plus"/><span>More</span>
                     </Button>
                   </div>
+                </div>
+              </div>
+            </div>
+            {/*time of purchase component*/}
+            <div className="d-flex">
+              <div id="time-of-purchase" className={"card"}>
+                <div className="card-body">
+
+                <div  className="d-flex">
+                  <h6 className="card-title mr-auto">Time of purchase <span className={"gray"}>- When did this purchase take place?</span></h6>
+                  <Button className="delete-button" size="sm" variant={"outline-dark"}>
+                      <i className="fas fa-clock"/><span>Remove time period</span>
+                  </Button>
+                </div>
+                <div className="d-flex mid-row">
+                  <div className="btn-group">
+                    <button className="category-dd-1 btn btn-outline-dark btn-sm" type="button">
+                      Product purchased
+                    </button>
+                    <button type="button" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span className="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div className="dropdown-menu">
+                      ...
+                    </div>
+                  </div>
+                  <div className="btn-group">
+                    <button className="category-dd-2 btn btn-outline-dark btn-sm" type="button">
+                      on
+                    </button>
+                    <button type="button" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span className="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div className="dropdown-menu">
+                      ...
+                    </div>
+                  </div>
+                  <div className="btn-group">
+                    <button className="category-dd-4 btn btn-outline-dark btn-sm" type="button">
+                      <div>27/11/2015</div>
+                    </button>
+                    <div className="dropdown-menu">
+                      ...
+                    </div>
+                  </div>
+                </div>
 
                 </div>
               </div>
             </div>
+            {/*technology component*/}
+            <div className="d-flex">
+              <div id="technology" className={"card"}>
+                <div className="card-body">
+                  <div  className="d-flex">
+                    <h6 className="card-title mr-auto">Technology <span className={"gray"}>- Which device browser or operating system are they using?</span></h6>
+                    <Button className="delete-button" size="sm" variant={"outline-dark"}>
+                        <i className="fas fa-trash-alt"/><span>Delete</span>
+                    </Button>
+                  </div>
+                  <div className="d-flex mid-row">
+                    <div className="btn-group">
+                      <button className="category-dd-1 btn btn-outline-dark btn-sm" type="button">
+                        Device
+                      </button>
+                      <button type="button" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span className="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div className="dropdown-menu">
+                        ...
+                      </div>
+                    </div>
+                    <div className="btn-group">
+                      <button className="category-dd-2 btn btn-outline-dark btn-sm" type="button">
+                        is one of
+                      </button>
+                      <button type="button" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span className="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div className="dropdown-menu">
+                        ...
+                      </div>
+                    </div>
+                    <div className="btn-group">
+                      <button className="category-dd-4 btn btn-outline-dark btn-sm" type="button">
+                        <span>mobile</span>
+                      </button>
+                      <div className="dropdown-menu">
+                        ...
+                      </div>
+                    </div>
+                  </div>
+                  <div className="d-flex">
+                    <Button className="more-button" size="sm" variant={"outline-dark"}>
+                      <i className="fas fa-plus"/><span>More</span>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*technology component ends*/}
+            {/*New condition*/}
+            <div className="d-flex">
+              <div id="new-condition" className={"card"}>
+                <div className="card-body">
+                  <div  className="d-flex">
+                    <h6 className="card-title ">New condition</h6>
+                    <div className="btn-group">
+                      <button className="category-dd-1 btn btn-outline-dark btn-sm" type="button">
+                        Purchase history
+                      </button>
+                      <button type="button" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span className="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div className="dropdown-menu">
+                        ...
+                      </div>
+                    </div>
+                    <Button className="delete-button ml-auto" size="sm" variant={"outline-dark"}>
+                        <i className="fas fa-plus"/><span>Add</span>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*technology component ends*/}
           </section>
         </section>
       </main>
-      </div></div>
+      </div>
+      </div>
     </div>
   );
 }

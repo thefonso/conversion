@@ -263,34 +263,32 @@ body{
   width: 66%;
 }
 
-#products-purchased{
-  margin-top: 17px;
-  width: 100%;
-}
-#products-purchased .more-button{
+
+.more-button{
   font-size: 8px;
   display: inline-block;
   min-width: 100px;
+  margin-top: 20px;
 }
-#products-purchased .more-button span{
+.more-button span{
   font-size: 12px;
   vertical-align: middle;
   margin-left:2px;
 }
 
-#products-purchased .delete-button{
+.delete-button{
   font-size: 12px;
   display: inline-block;
   min-width: 100px;
 }
-#products-purchased .delete-button span{
+.delete-button span{
   font-size: 12px;
   vertical-align: middle;
   margin-left: 12px;
 }
 
 
-#products-purchased .category-dd-1{
+.category-dd-1{
   font-size: 12px;
   width: 175px;
   text-align: start;
@@ -298,7 +296,7 @@ body{
   border-right-width: 0px;
 }
 
-#products-purchased .category-dd-2{
+.category-dd-2{
   font-size: 12px;
   width: 100px;
   text-align: start;
@@ -306,7 +304,7 @@ body{
   border-right-width: 0px;
 }
 
-#products-purchased .category-dd-3{
+.category-dd-3{
   font-size: 12px;
   width: 400px;
   text-align: start;
@@ -315,17 +313,34 @@ body{
   border-radius: 3px;
 }
 
-#products-purchased .category-dd-3 span{
+.category-dd-3 span{
   border-radius: 3px;
   background-color: #d5d8de;
   padding: 2px 5px 3px 5px;
   color: #5d6063;
 }
 
-#products-purchased .mid-row{
-  margin-top: 20px;
-  margin-bottom: 20px;
+.category-dd-4{
+  font-size: 12px;
+  width: 200px;
+  text-align: start;
+  padding-left: 6px;
+  border-right-width: 1px;
+  border-radius: 3px;
 }
+
+.category-dd-4 span{
+  border-radius: 3px;
+  background-color: #d5d8de;
+  padding: 2px 5px 3px 5px;
+  color: #5d6063;
+}
+
+.mid-row{
+  margin-top: 20px;
+  /*margin-bottom: 20px;*/
+}
+
 
 .dropdown-toggle{
   border-left-width: 0px;
@@ -342,6 +357,32 @@ body{
   width: 55%;
 }
 
+#products-purchased{
+  margin-top: 17px;
+  width: 100%;
+}
+
+#time-of-purchase{
+  
+  margin-top: 0px;
+  width: 100%;
+}
+
+#technology{
+  margin-top: 17px;
+  width: 100%;
+}
+
+#new-condition {
+  margin-top: 17px;
+  width: 100%;
+}
+
+#new-condition .card-title{
+  padding-top: 6px;
+  text-align: center;
+  margin-right: 105px;
+}
 
 .App-content form {
   width:100%;
