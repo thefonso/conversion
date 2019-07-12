@@ -10,7 +10,9 @@ class NewCondition extends Component {
   handleClick() {
     console.log("Add item clicked")
   }
+
   render() {
+    const {addEvent} = this.props;
     return (
       <div className="d-flex">
         <div id={"new-condition"} className={"card"}>
@@ -29,7 +31,7 @@ class NewCondition extends Component {
                   <a className="dropdown-item" href="#">Gamma</a>
                 </div>
               </div>
-              <Button className="add-button ml-auto" size="sm" variant={"outline-dark"} onClick={this.handleClick}>
+              <Button className="add-button ml-auto" size="sm" variant={"outline-dark"} onClick={addEvent}>
                   <i className="fas fa-plus"/><span>Add</span>
               </Button>
             </div>
