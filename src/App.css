@@ -124,7 +124,7 @@ body{
 
 /*main section starts*/
 .container{
-  max-width: 1395px;
+  min-width: 1395px;
 }
 .main-section{
   /*flex-direction: row;*/
@@ -278,14 +278,55 @@ body{
   margin-left:2px;
 }
 
-.category-dd-2{
-  width: 125px;
+#products-purchased .delete-button{
+  font-size: 12px;
+  display: inline-block;
+  min-width: 100px;
+}
+#products-purchased .delete-button span{
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left: 12px;
 }
 
-#products-purchased .category-dd-1 #dropdown-outline-secondary {
-  /*font-size: 9px;*/
-  width: 200px;
+
+#products-purchased .category-dd-1{
+  font-size: 12px;
+  width: 175px;
+  text-align: start;
+  padding-left: 13px;
+  border-right-width: 0px;
 }
+
+#products-purchased .category-dd-2{
+  font-size: 12px;
+  width: 100px;
+  text-align: start;
+  padding-left: 13px;
+  border-right-width: 0px;
+}
+
+#products-purchased .category-dd-3{
+  font-size: 12px;
+  width: 400px;
+  text-align: start;
+  padding-left: 13px;
+  border-right-width: 1px;
+  border-radius: 3px;
+  color: red;
+}
+
+#products-purchased .mid-row{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dropdown-toggle{
+  border-left-width: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 
 #sample-field::placeholder {
   color: red;

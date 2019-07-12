@@ -13,6 +13,8 @@ import './App.css';
 function App() {
   return (
     <div className="App container">
+      <div className="row">
+        <div className="col">
       <nav className="navbar white d-flex">
         <div className={"mr-auto"}>
           <a className="navbar-brand" href="#">
@@ -38,7 +40,8 @@ function App() {
           </div>
         </div>
       </nav>
-
+      </div></div>
+      <div className="row"><div className="col">
       <main className={"main-section d-flex flex-row"}>
         <aside className={"App-menu deepBlue"}>
           <ul>
@@ -77,7 +80,6 @@ function App() {
                 <div className="card-body">
                   <h6 className="card-title">Define a new Segment</h6>
                   <p className="card-text">Add a Condition to define a segment. The more conditions yuo add the more specific your segment will be.</p>
-
                 </div>
               </div>
 
@@ -93,45 +95,62 @@ function App() {
             <div className="d-flex">
               <div id={"products-purchased"} className="card">
                 <div className="card-body">
-                  <h6 className="card-title">Define a new Segment <span className={"gray"}>- What products have they interacted with?</span></h6>
+
                   <div className="d-flex">
-                    <DropdownButton className={"category-dd-1"}
-                                    size="sm"
-                                    id="dropdown-outline-secondary"
-                                    split
-                                    variant="outline-dark"
-                                    title="Category">
-                      <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                    </DropdownButton>
-                    <DropdownButton className={"category-dd-2"}
-                                    size="sm"
-                                    id="dropdown-basic-button"
-                                    variant="outline-dark"
-                                    title="is one of">
-                      <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                      <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                      <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                    </DropdownButton>
-                    <Form>
-                      <Form.Group controlId="exampleForm.ControlInput1">
-                        <Form.Control id="sample-field" type="email" placeholder="shoes" />
-                      </Form.Group>
-                    </Form>
+                    <h6 className="card-title mr-auto">Define a new Segment <span className={"gray"}>- What products have they interacted with?</span></h6>
+                    <Button className="delete-button" size="sm" variant={"outline-dark"}>
+                        <i className="fas fa-trash-alt"/><span>Delete</span>
+                    </Button>
                   </div>
+
+                  <div className="d-flex mid-row">
+                    <div className="btn-group">
+                      <button className="category-dd-1 btn btn-outline-dark btn-sm" type="button">
+                        Category
+                      </button>
+                      <button type="button" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span className="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div className="dropdown-menu">
+                        ...
+                      </div>
+                    </div>
+                    <div className="btn-group">
+                      <button className="category-dd-2 btn btn-outline-dark btn-sm" type="button">
+                        is one of
+                      </button>
+                      <button type="button" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span className="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div className="dropdown-menu">
+                        ...
+                      </div>
+                    </div>
+                    <div className="btn-group">
+                      <button className="category-dd-3 btn btn-outline-dark btn-sm" type="button">
+                        Shoes
+                      </button>
+                      <div className="dropdown-menu">
+                        ...
+                      </div>
+                    </div>
+                  </div>
+
                   <div className="d-flex">
                     <Button className="more-button" size="sm" variant={"outline-dark"}>
                       <i className="fas fa-plus"/><span>More</span>
                     </Button>
                   </div>
+
                 </div>
               </div>
             </div>
           </section>
         </section>
       </main>
-
+      </div></div>
     </div>
   );
 }
