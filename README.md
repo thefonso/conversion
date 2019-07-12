@@ -1,4 +1,29 @@
+#Notes:
+
+How I spent my time and What I could do better:
+
+Mon: spent time looking up fonts and icons for image
+
+Tue: could not find icon library so began process of meticulously cutting out images, making them transparent png where possible and then converting them into svg. Used thegimp and Figma for this process. Per original requirements I had to convert 1 for 1 for the design
+
+Wed: Had to split time bettween external duties (read day job and freelance work ^_^) and app but began process of building up code into html and css
+
+Thurday / Friday: Split code into components and do final touches before hand in 
+
+What I think I could do better:
+
+A few details here and there on the visual conversion, converting px to rem or somthing better. Refactoring the css and transfering it to sass.
+
+tested only in firefox, requirements didn't call on responsive so I just focused on getting the look as close as I can in time.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Side note: 
+
+I used yarn on my local machine to get things going. But I think the normal npm way should do fine.
+
+-cheers
 
 ## Available Scripts
 

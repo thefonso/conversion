@@ -10,6 +10,14 @@
   border: #bdc3c7 1px solid;
 }
 
+.btn-outline-dark{
+  border-color: #bdc3c7;
+}
+
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
 
 
 .more-button{
