@@ -12,6 +12,10 @@ class Parent extends Component {
 
     this.state = {
         products: [
+            {id: 0, title: "Products purchased", tagLine: "What products have they interacted with?"},
+            // { id: 1, title: "alpha", tagLine: "Alfonso works hard." },
+            // { id: 2, title: "beta", tagLine: "Alfonso is fun to work with!" },
+            // { id: 3, title: "gamma", tagLine: "He likes to learn new things." }
         ],
         title: "",
         tagLine: "",
