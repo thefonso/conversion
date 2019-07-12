@@ -148,7 +148,7 @@ function App() {
             </div>
             {/*time of purchase component*/}
             <div className="d-flex">
-              <div id="time-of-purchase" className={"card"}>
+              <div id={"time-of-purchase"} className={"card"}>
                 <div className="card-body">
 
                 <div  className="d-flex">
@@ -197,7 +197,7 @@ function App() {
             </div>
             {/*technology component*/}
             <div className="d-flex">
-              <div id="technology" className={"card"}>
+              <div id={"technology"} className={"card"}>
                 <div className="card-body">
                   <div  className="d-flex">
                     <h6 className="card-title mr-auto">Technology <span className={"gray"}>- Which device browser or operating system are they using?</span></h6>
@@ -250,7 +250,7 @@ function App() {
             {/*technology component ends*/}
             {/*New condition*/}
             <div className="d-flex">
-              <div id="new-condition" className={"card"}>
+              <div id={"new-condition"} className={"card"}>
                 <div className="card-body">
                   <div  className="d-flex">
                     <h6 className="card-title ">New condition</h6>
@@ -266,14 +266,14 @@ function App() {
                         ...
                       </div>
                     </div>
-                    <Button className="delete-button ml-auto" size="sm" variant={"outline-dark"}>
+                    <Button className="add-button ml-auto" size="sm" variant={"outline-dark"}>
                         <i className="fas fa-plus"/><span>Add</span>
                     </Button>
                   </div>
                 </div>
               </div>
             </div>
-            {/*technology component ends*/}
+            {/*New condition ends*/}
           </section>
         </section>
       </main>

@@ -362,10 +362,21 @@ body{
   width: 100%;
 }
 
+#products-purchased .card-body{
+  border-bottom: white 1px solid !important;
+  border-bottom-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+
 #time-of-purchase{
-  
   margin-top: 0px;
   width: 100%;
+}
+
+#time-of-purchase .card-body{
+  border-top: white 1px solid !important;
+  border-top-right-radius: 1px !important;
+  border-top-left-radius: 1px !important;
 }
 
 #technology{
@@ -383,6 +394,21 @@ body{
   text-align: center;
   margin-right: 105px;
 }
+
+.add-button{
+  font-size: 8px;
+  display: inline-block;
+  min-width: 100px;
+  background-color: #47b28d;
+  color: white;
+  border: none;
+}
+.add-button span{
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
 
 .App-content form {
   width:100%;
