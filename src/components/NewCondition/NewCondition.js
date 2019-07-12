@@ -15,6 +15,10 @@ class NewCondition extends Component {
     }));
   }
 
+  showMe(value){
+    alert("see me in the console "+ value);
+    console.log(value);
+  }
 
   render() {
     const {addEvent, goSubmit, goChange, prodValue} = this.props;
@@ -52,7 +56,7 @@ class NewCondition extends Component {
             </div>
           </div>
         </div>
-        <div className="d-flex justify-content-end"><span className={"footerLink"} onClick={()=> console.log(prodValue)}>Show source code</span></div>
+        <div className="d-flex justify-content-end"><span className={"footerLink"} onClick={()=> this.showMe(prodValue[0])}>Show source code</span></div>
       </div>
     );
   }
