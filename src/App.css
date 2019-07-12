@@ -310,10 +310,16 @@ body{
   font-size: 12px;
   width: 400px;
   text-align: start;
-  padding-left: 13px;
+  padding-left: 6px;
   border-right-width: 1px;
   border-radius: 3px;
-  color: red;
+}
+
+#products-purchased .category-dd-3 span{
+  border-radius: 3px;
+  background-color: #d5d8de;
+  padding: 2px 5px 3px 5px;
+  color: #5d6063;
 }
 
 #products-purchased .mid-row{
@@ -326,7 +332,6 @@ body{
   margin-left: 20px;
   margin-right: 20px;
 }
-
 
 #sample-field::placeholder {
   color: red;

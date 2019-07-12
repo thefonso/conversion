@@ -130,7 +130,7 @@ function App() {
                     </div>
                     <div className="btn-group">
                       <button className="category-dd-3 btn btn-outline-dark btn-sm" type="button">
-                        Shoes
+                        <span>Shoes</span>
                       </button>
                       <div className="dropdown-menu">
                         ...
