@@ -6,18 +6,20 @@ import NewCondition from "../NewCondition";
 import "./parent.css";
 
 class Parent extends Component {
-  state = {
-    products: [
-      {
-        id: 0,
-        title: "Products purchased",
-        tagLine: "What products have they interacted with?"
-      },
-      { id: 1, title: "alpha", tagLine: "Alfonso works hard." },
-      { id: 2, title: "beta", tagLine: "Alfonso is fun to work with!" },
-      { id: 3, title: "gamma", tagLine: "He likes to learn new things." }
-    ]
-  };
+  constructor(){
+    super();
+    this.prodID = 0;
+
+    this.state = {
+        products: [
+        ],
+        title: "",
+        tagLine: "",
+        id: "",
+
+      };
+  }
+
 
 
   deleteProduct = (index, e) => {
@@ -26,12 +28,23 @@ class Parent extends Component {
     this.setState({ products: copyProducts });
   };
 
-  addProduct = () => {
-    const products = Object.assign([], this.state.products); // make a copy of array
-    // const index = this.state.products.findIndex(product => {return product.id === id })
-    // TODO: get random product to add back?
-    this.setState({ products: products });
+  addProduct = ()=>{
+    this.prodID = this.prodID + 1;
+    const copyProducts = Object.assign([],this.state.products);
+    copyProducts.push({
+      id: this.prodID,
+      title: this.state.title,
+      tagLine: this.state.tagLine,
+    })
+    this.setState({ products: copyProducts });
   }
+
+  setProduct = (element) => {
+    this.setState({
+      title : element.target.value
+    })
+  }
+
 
   render() {
     return (
@@ -39,6 +52,12 @@ class Parent extends Component {
         <ProgressBar />
 
         {/*TODO: products Delete button removes that card from the deck Progress bar reduces*/}
+        <input type="text" onBlur={this.setProduct}/>
+        <button onClick={this.addProduct}>Add</button>
+
+        <form action={this.addProduct()}>
+          <input type="text" onChange={this.} onBlur={this.setProduct}/>
+        </form>
 
         {this.state.products.map((product, index) => {
           return (
