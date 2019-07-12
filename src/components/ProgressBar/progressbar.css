@@ -14,9 +14,9 @@
   border-radius: 5px;
 }
 
-#myBar {
+#myBar, .progress-bar {
   width: 10%;
-  height: 20px;
+  /*height: 20px;*/
   background-color: #47b28d;
   border-radius: 5px;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ProgressBar from "../ProgressBar";
+import Progress from "../ProgressBar";
 import Products from "../Products";
 import Technology from "../Technology";
 import NewCondition from "../NewCondition";
@@ -54,7 +54,7 @@ class Parent extends Component {
   render() {
     return (
       <section className={"App-content bodyPanelGray"}>
-        <ProgressBar />
+        <Progress barValue={this.state.products.length}/>
 
         {/*TODO: products Delete button removes that card from the deck Progress bar reduces*/}
 

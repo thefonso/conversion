@@ -1,8 +1,16 @@
 import React, {Component} from 'react';
+import ProgressBar from 'react-bootstrap/ProgressBar'
 import './progressbar.css'
 
-class ProgressBar extends Component {
+
+class Progress extends Component {
+  constructor(props) {
+    super(props);
+
+  }
+
   render() {
+    const {barValue} = this.props;
     return (
       <div>
         {/*define segment */}
@@ -18,7 +26,8 @@ class ProgressBar extends Component {
             <div className="card-body">
               <h6 className="card-title">Estimated segment size</h6>
               <p className="card-text">10-20% of your total traffic expected to join based on a sample of historical data</p>
-              <div id="myProgress"><div id="myBar"></div></div>
+              {/*<div id="myProgress"><div id="myBar"></div></div>*/}
+              <ProgressBar id={"myProgress"} now={barValue * 10}/>
             </div>
           </div>
         </div>
@@ -27,4 +36,4 @@ class ProgressBar extends Component {
   }
 }
 
-export default ProgressBar;
+export default Progress;

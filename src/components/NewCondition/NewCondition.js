@@ -4,31 +4,26 @@ import Button from "react-bootstrap/Button";
 class NewCondition extends Component {
   constructor(props) {
     super(props);
-    this.state ={
-      ishovering: true,
-    }
+    this.state = {showWarning: true};
+    this.handleToggleClick = this.handleToggleClick.bind(this);
   }
 
-  mouseOut() {
-    console.log("Mouse out!!!");
-    this.setState({ishovering: true});
+  handleToggleClick() {
+    this.setState(prevState => ({
+      showWarning: !prevState.showWarning
+    }));
   }
 
-  mouseOver() {
-    console.log("Mouse over!!!");
-    this.setState({ishovering: false});
-  }
 
   render() {
-    const ishovering = this.state.ishovering;
     const {addEvent, goSubmit, goChange} = this.props;
     return (
       <div className="d-flex">
-        <div id={"new-condition"} className={"card"} onMouseOut={() => this.mouseOut()} onMouseOver={() => this.mouseOver()}>
+        <div id={"new-condition"} className={"card"} >
           <div className="card-body">
             <div  className="d-flex">
               <h6 className="card-title ">New condition</h6>
-            {ishovering ? (
+            {this.state.showWarning ? (
               <div className="btn-group">
                 <button className="category-dd-1 btn btn-outline-dark btn-sm" type="button">Purchase history</button>
                 <button type="button" className="btn btn-sm btn-outline-dark dropdown-toggle dropdown-toggle-split"
@@ -47,10 +42,10 @@ class NewCondition extends Component {
                   <input name={"title"} value={this.state.title} type="text" onChange={goChange}/></label>
                 <label>tagLine:
                   <input name={"tagLine"} value={this.state.tagLine} type="text" onChange={goChange}/></label>
-                <button onClick={addEvent}>Add</button>
+                <button onClick={addEvent}>Add Entry</button>
               </form>
             )}
-              <Button className="add-button ml-auto" size="sm" variant={"outline-dark"} onClick={addEvent}>
+              <Button className="add-button ml-auto" size="sm" variant={"outline-dark"} onClick={this.handleToggleClick}>
                   <i className="fas fa-plus"/><span>Add</span>
               </Button>
             </div>

@@ -1,2 +1,2 @@
-import ProgressBar from "./ProgressBar";
-export default ProgressBar;
+import Progress from "./Progress";
+export default Progress;
