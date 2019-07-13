@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Button from "react-bootstrap/Button";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
+import Dropdown from "react-bootstrap/Dropdown";
 
 class TimeOfPurchase extends Component {
   render() {
@@ -15,30 +17,33 @@ class TimeOfPurchase extends Component {
               </Button>
             </div>
             <div className="d-flex mid-row">
-              <div className="btn-group">
-                <button className="category-dd-1 btn btn-outline-dark btn-sm" type="button">
-                  Product purchased
-                </button>
-                <button type="button" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span className="sr-only">Toggle Dropdown</span>
-                </button>
-                <div className="dropdown-menu">
-                  ...
-                </div>
-              </div>
-              <div className="btn-group">
-                <button className="category-dd-2 btn btn-outline-dark btn-sm" type="button">
-                  on
-                </button>
-                <button type="button" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span className="sr-only">Toggle Dropdown</span>
-                </button>
-                <div className="dropdown-menu">
-                  ...
-                </div>
-              </div>
+              <ButtonGroup aria-label="Basic dropdown">
+                <Dropdown as={ButtonGroup}>
+                  <Button variant="outline-dark" className="category-dd-1 btn btn-sm btn-outline-dark" >Products purchased</Button>
+
+                  <Dropdown.Toggle split variant="outline-dark" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split" id="dropdown-split-basic" />
+  
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </ButtonGroup>
+
+              <ButtonGroup aria-label="Basic dropdown">
+                <Dropdown as={ButtonGroup}>
+                  <Button variant="outline-dark" className="category-dd-2 btn btn-sm btn-outline-dark" >on</Button>
+
+                  <Dropdown.Toggle split variant="outline-dark" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split" id="dropdown-split-basic" />
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </ButtonGroup>
               <div className="btn-group">
                 <button className="category-dd-4 btn btn-outline-dark btn-sm" type="button">
                   <div>27/11/2015</div>

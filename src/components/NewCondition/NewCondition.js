@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Button from "react-bootstrap/Button";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
+import Dropdown from "react-bootstrap/Dropdown";
 import './newcondition.css'
 
 class NewCondition extends Component {
@@ -29,18 +31,19 @@ class NewCondition extends Component {
             <div  className="d-flex">
               <h6 className="card-title ">New condition</h6>
             {this.state.showWarning ? (
-              <div className="btn-group">
-                <button className="category-dd-1 btn btn-outline-dark btn-sm" type="button">Purchase history</button>
-                <button type="button" className="btn btn-sm btn-outline-dark dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span className="sr-only">Toggle Dropdown</span>
-                </button>
-                <div className="dropdown-menu">
-                  {/*<a className="dropdown-item" href="#">Alpha</a>*/}
-                  {/*<a className="dropdown-item" href="#">Beta</a>*/}
-                  {/*<a className="dropdown-item" href="#">Gamma</a>*/}
-                </div>
-              </div>
+            <ButtonGroup aria-label="Basic dropdown">
+              <Dropdown as={ButtonGroup}>
+                <Button variant="outline-dark" className="category-dd-1 btn btn-outline-dark btn-sm">Purchase history</Button>
+
+                <Dropdown.Toggle split variant="outline-dark" id="dropdown-split-basic" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split"/>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </ButtonGroup>
             ) : (
               <form id={"product-form"} onSubmit={goSubmit}>
                 <label>title:

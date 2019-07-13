@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Button from "react-bootstrap/Button";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
+import Dropdown from "react-bootstrap/Dropdown";
 
 class Technology extends Component {
   constructor(props) {
@@ -23,30 +25,33 @@ class Technology extends Component {
               </Button>
             </div>
             <div className="d-flex mid-row">
-              <div className="btn-group">
-                <button className="category-dd-1 btn btn-outline-dark btn-sm" type="button">
-                  Device
-                </button>
-                <button type="button" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span className="sr-only">Toggle Dropdown</span>
-                </button>
-                <div className="dropdown-menu">
-                  ...
-                </div>
-              </div>
-              <div className="btn-group">
-                <button className="category-dd-2 btn btn-outline-dark btn-sm" type="button">
-                  is one of
-                </button>
-                <button type="button" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span className="sr-only">Toggle Dropdown</span>
-                </button>
-                <div className="dropdown-menu">
-                  ...
-                </div>
-              </div>
+            <ButtonGroup aria-label="Basic dropdown">
+              <Dropdown as={ButtonGroup}>
+                <Button variant="outline-dark" className="category-dd-1 btn btn-sm btn-outline-dark" >Device</Button>
+
+                <Dropdown.Toggle split variant="outline-dark" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split" id="dropdown-split-basic" />
+
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </ButtonGroup>
+
+            <ButtonGroup aria-label="Basic dropdown">
+              <Dropdown as={ButtonGroup}>
+                <Button variant="outline-dark" className="category-dd-2 btn btn-sm btn-outline-dark" >is one of</Button>
+
+                <Dropdown.Toggle split variant="outline-dark" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split" id="dropdown-split-basic" />
+
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </ButtonGroup>
               <div className="btn-group">
                 <button className="category-dd-4 btn btn-outline-dark btn-sm" type="button">
                   <span>mobile</span>
