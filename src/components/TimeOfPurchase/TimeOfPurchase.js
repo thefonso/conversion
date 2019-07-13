@@ -22,7 +22,7 @@ class TimeOfPurchase extends Component {
                   <Button variant="outline-dark" className="category-dd-1 btn btn-sm btn-outline-dark" >Products purchased</Button>
 
                   <Dropdown.Toggle split variant="outline-dark" className="btn btn-sm btn-outline-dark  dropdown-toggle dropdown-toggle-split" id="dropdown-split-basic" />
-  
+
                   <Dropdown.Menu>
                     <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
                     <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
