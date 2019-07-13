@@ -107,16 +107,13 @@
 }
 
 
-
 #products-purchased .form-control{
   width: 55%;
 }
-
 #products-purchased{
   margin-top: 17px;
   width: 100%;
 }
-
 #products-purchased .card-body{
   border-bottom: white 1px solid !important;
   border-bottom-right-radius: 10px !important;
@@ -127,7 +124,6 @@
   margin-top: 0px;
   width: 100%;
 }
-
 #time-of-purchase .card-body{
   border-top: white 1px solid !important;
   border-top-right-radius: 1px !important;
@@ -139,6 +135,9 @@
   width: 100%;
 }
 
+#new-condition .form-control{
+  width: 55%;
+}
 #new-condition {
   margin-top: 17px;
   width: 100%;
@@ -154,6 +153,7 @@
   font-size: 8px;
   display: inline-block;
   min-width: 100px;
+  max-height: 30px;
   background-color: #47b28d;
   color: white;
   border: none;
